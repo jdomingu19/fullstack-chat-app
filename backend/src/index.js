@@ -15,6 +15,9 @@ import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 
 // ?
+import cors from "cors";
+
+// ?
 import { connectDatabase } from "./lib/db.js";
 
 // ?
@@ -34,6 +37,14 @@ app.use(express.json());
 
 // ?
 app.use(cookieParser());
+
+// ?
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  }),
+);
 
 // ?
 app.use("/api/auth", authRoutes);
