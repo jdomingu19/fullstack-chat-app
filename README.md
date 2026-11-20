@@ -62,12 +62,6 @@ cd frontend/
 npm create vite@latest .
 ```
 
-# Frontend
-
-```bash
-cd frontend/
-```
-
 ```bash
 npm i react-router-dom
 ```
@@ -91,6 +85,10 @@ npm i axios
 
 ```bash
 npm i zustand
+```
+
+```bash
+npm i lucide-react
 ```
 
 > Built with ♥ by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
